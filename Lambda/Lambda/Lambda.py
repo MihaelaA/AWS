@@ -1,4 +1,3 @@
-
 import json
 import urllib.parse
 import boto3
@@ -6,11 +5,16 @@ import os
 import sys
 import ftplib
 import io
+from base64 import b64decode
+
+ENCRYPTED = os.environ['password']
+# Decrypt code should run once and variables stored outside of the function
+# handler so that these are decrypted once per container
+password = boto3.client('kms').decrypt(CiphertextBlob=b64decode(ENCRYPTED))['Plaintext'].decode('utf-8')
 
 s3 = boto3.client('s3')
 ip = os.environ['ip']
 username = os.environ['user']
-password = os.environ['password']
 remote_directory = os.environ['remoteDirectory']
 
 # https://pythonvibes.wordpress.com/2016/12/09/ftp-and-sftp-through-lambda/
