@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Lambda", "Lambda\Lambda.pyproj", "{E1399F0D-2D2D-491D-9482-3CD8B0288BBF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaDotNet", "LambdaDotNet\LambdaDotNet.csproj", "{F47E7CEF-1439-41E4-9F08-308059EAA3B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaDotNet.Tests", "LambdaDotNet.Tests\LambdaDotNet.Tests.csproj", "{4848EDF9-7174-495E-9E75-CDE53A7E17B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,8 +17,19 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E1399F0D-2D2D-491D-9482-3CD8B0288BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E1399F0D-2D2D-491D-9482-3CD8B0288BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47E7CEF-1439-41E4-9F08-308059EAA3B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F47E7CEF-1439-41E4-9F08-308059EAA3B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F47E7CEF-1439-41E4-9F08-308059EAA3B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47E7CEF-1439-41E4-9F08-308059EAA3B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4848EDF9-7174-495E-9E75-CDE53A7E17B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4848EDF9-7174-495E-9E75-CDE53A7E17B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4848EDF9-7174-495E-9E75-CDE53A7E17B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4848EDF9-7174-495E-9E75-CDE53A7E17B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {058E3753-8798-4412-8D6D-4A7AE9B8D7E1}
 	EndGlobalSection
 EndGlobal
